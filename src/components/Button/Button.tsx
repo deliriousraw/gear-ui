@@ -9,10 +9,8 @@ type OtherNativeButtonProps = Omit<ComponentPropsWithoutRef<'button'>, keyof Own
 
 export type ButtonProps = OtherNativeButtonProps & OwnButtonProps
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
     return <button {...props} ref={ref} />
 })
 
 Button.displayName = 'Button';
-
-export default Button

@@ -1,0 +1,13 @@
+{
+    "files.watcherExclude": {
+        // "**/.git": true,
+        "**/dist/": true,
+        "**/node_modules": true,
+      },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist/": true,
+        "**/*.lock": true,
+    },
+    "git.autofetch": true,
+}

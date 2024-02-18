@@ -1,0 +1,27 @@
+import React, { ComponentPropsWithoutRef, forwardRef } from 'react';
+
+type Own{{ properCase name }}Props = {
+  'data-testid'?: string;
+};
+
+type OtherNativeDivProps = Omit<
+  ComponentPropsWithoutRef<'div'>,
+  keyof Own{{ properCase name }}Props
+>;
+
+export type {{ properCase name }}Props = OtherNativeDivProps & Own{{ properCase name }}Props;
+
+export const {{ properCase name }} = forwardRef<HTMLDivElement, {{ properCase name }}Props>(
+  ({ children, ...rest }, ref) => {
+
+    return (
+      <div {...rest} ref={ref} data-testid={`${rest['data-testid'] || '{{ properCase name }}'}`}>
+        {children}
+      </div>
+    );
+  }
+);
+
+{{ properCase name }}.displayName = '{{ properCase name }}';
+
+export default {{ properCase name }};

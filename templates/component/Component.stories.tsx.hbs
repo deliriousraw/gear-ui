@@ -1,0 +1,28 @@
+import React from 'react';
+
+import type { Meta } from '@storybook/react';
+
+import {{ pascalCase name }}Docs from './{{ pascalCase name }}.mdx';
+
+import { {{ pascalCase name }}, {{ pascalCase name }}Props } from '.';
+
+export const Playground = (args: {{ pascalCase name }}Props) => <{{ pascalCase name }} {...args} />;
+
+export default {
+  title: 'Components/{{ properCase name }}',
+  component: {{ properCase name }},
+  parameters: {
+    docs: {
+      page: {{ pascalCase name }}Docs,
+    },
+    design: {
+      type: 'figma',
+      url: ''
+    }
+  },
+  args: {
+    children: 'Test',
+  },
+  // https://storybook.js.org/docs/6.5/essentials/controls#annotation
+  argTypes: {}
+} satisfies Meta<{{ pascalCase name }}Props>;

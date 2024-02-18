@@ -18,8 +18,8 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -30,7 +30,7 @@
     }
   },
   "prettier": {
-    "printWidth": 80,
+    "printWidth": 120,
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
@@ -49,23 +49,38 @@
     }
   ],
   "devDependencies": {
-    "@babel/core": "^7.23.9",
-    "@size-limit/preset-small-lib": "^11.0.2",
-    "@storybook/addon-essentials": "^7.6.16",
-    "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^7.6.16",
-    "@storybook/addons": "^7.6.16",
-    "@storybook/react": "^7.6.16",
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "babel-loader": "^9.1.3",
-    "husky": "^9.0.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
-    "size-limit": "^11.0.2",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "@babel/core": "7.23.9",
+    "@size-limit/preset-small-lib": "11.0.2",
+    "@storybook/addon-a11y": "7.6.16",
+    "@storybook/addon-designs": "^7.0.9",
+    "@storybook/addon-docs": "7.6.16",
+    "@storybook/addon-essentials": "7.6.16",
+    "@storybook/addon-info": "5.3.21",
+    "@storybook/addon-interactions": "^7.6.16",
+    "@storybook/addon-links": "7.6.16",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/addon-storyshots": "7.6.16",
+    "@storybook/addon-storyshots-puppeteer": "7.6.16",
+    "@storybook/addon-storysource": "7.6.16",
+    "@storybook/addons": "7.6.16",
+    "@storybook/blocks": "7.6.16",
+    "@storybook/react": "7.6.16",
+    "@storybook/react-webpack5": "7.6.16",
+    "@storybook/test": "7.6.16",
+    "@types/react": "18.2.56",
+    "@types/react-dom": "18.2.19",
+    "babel-loader": "9.1.3",
+    "chromatic": "^10.9.6",
+    "husky": "9.0.11",
+    "plop": "2.7.4",
+    "react": "18.2.0",
+    "react-docgen-typescript": "^2.2.2",
+    "react-dom": "18.2.0",
+    "react-is": "18.2.0",
+    "size-limit": "11.0.2",
+    "storybook": "^7.6.16",
+    "tsdx": "0.14.1",
+    "tslib": "2.6.2",
+    "typescript": "5.3.3"
   }
 }
