@@ -1,5 +1,5 @@
 
-const path = require('path');
+import path from 'path';
 
 import type { StorybookConfig } from '@storybook/react-webpack5';
 
@@ -25,6 +25,7 @@ const config: StorybookConfig = {
           },
         },
     },
+    '@storybook/preset-scss'
   ],
   framework: {
     name: '@storybook/react-webpack5',
