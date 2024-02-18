@@ -1,16 +1,15 @@
 import React, { ComponentPropsWithoutRef, forwardRef } from 'react';
 
 type OwnTypographyProps = {
-    'data-testid'?: string;
-}
+  'data-testid'?: string;
+};
 
-type OtherNativeSpanProps = Omit<ComponentPropsWithoutRef<'button'>, keyof OwnTypographyProps> 
+type OtherNativeSpanProps = Omit<ComponentPropsWithoutRef<'button'>, keyof OwnTypographyProps>;
 
-
-export type TypographyProps = OtherNativeSpanProps & OwnTypographyProps
+export type TypographyProps = OtherNativeSpanProps & OwnTypographyProps;
 
 export const Typography = forwardRef<HTMLSpanElement, TypographyProps>((props, ref) => {
-    return <span {...props} ref={ref} />
-})
+  return <span {...props} ref={ref} />;
+});
 
 Typography.displayName = 'Typography';
