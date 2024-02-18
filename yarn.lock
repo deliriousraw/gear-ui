@@ -9781,7 +9781,7 @@ __metadata:
     lodash: "npm:4.17.21"
     lodash-es: "npm:4.17.21"
     plop: "npm:2.7.4"
-    postcss: "npm:^8.4.35"
+    postcss: "npm:8.4.35"
     react: "npm:18.2.0"
     react-docgen-typescript: "npm:2.2.2"
     react-dom: "npm:18.2.0"
@@ -14757,7 +14757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.33, postcss@npm:^8.4.35":
+"postcss@npm:8.4.35, postcss@npm:^8.4.33":
   version: 8.4.35
   resolution: "postcss@npm:8.4.35"
   dependencies:

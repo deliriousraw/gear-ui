@@ -1,13 +1,17 @@
 {
-    "files.watcherExclude": {
-        // "**/.git": true,
-        "**/dist/": true,
-        "**/node_modules": true,
-      },
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/dist/": true,
-        "**/*.lock": true,
-    },
-    "git.autofetch": true,
+  "files.watcherExclude": {
+    // "**/.git": true,
+    "**/dist/": true,
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist/": true,
+    "**/*.lock": true,
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "git.autofetch": true,
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
